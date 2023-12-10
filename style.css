@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+header {
+    background-color: darkslategray;
+    display: grid;
+    align-items: center;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+header nav ul {
+    text-align: end;
+}
+
+header nav ul li {
+    display: inline;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover{
+    color: orange;
+}
+
+main {
+    background-image: linear-gradient(to right, rgba(47, 79, 79, 0.200), #ffffff, rgba(47, 79, 79, 0.500), #ffffff);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.main-content aside {
+    background-color: #ffffff;
+    color: darkslategray;
+    padding: 2rem;
+    display: grid;
+}
+
+.main-content aside h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-content aside p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.main-content aside img {
+    width: 100%;
+}
+
+main .hero {
+    display: grid;
+}
+
+main .hero .hero-img {
+    background-image: url("https://fastly.picsum.photos/id/645/800/400.jpg?hmac=VDHw6BCWbJEZ1gqFNqC5vnjekFOQVFfeeBYofRK3zdQ");
+    background-size: cover;
+    padding: 2rem;
+    display:grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-rows: auto 1fr;
+    max-height: 600px;
+}
+
+main .hero .hero-text {
+    margin-top: 1rem;
+    color: #ffffff;
+    padding: 3rem 5rem;
+    background-color: #0000002b;
+}
+
+main .hero .hero-text p{
+    font-size: 1.5rem;
+}
+
+main .hero .hero-text button{
+    border: none;
+    outline: none;
+    padding: .5rem 1.5rem;
+    margin-top: 1rem;
+    background-color: rgba(47, 79, 79, 0.700);
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+main .hero .hero-text button:hover{
+    background-color: orange;
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+main .hero p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+main .hero .hero-text h3{
+    font-size: 2rem;
+}
+
+footer {
+    background-color: darkslategray;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    display: grid;
+    justify-items: center;
+}
+
